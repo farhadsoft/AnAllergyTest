@@ -8,8 +8,6 @@ namespace AllergyScore
     /// </summary>
     public class Allergies
     {
-        private int Score { get; set; }
-
         /// <summary>
         /// Initializes a new instance of the <see cref="Allergies"/> class.
         /// Initializes the allergies object on base of test score.
@@ -25,7 +23,9 @@ namespace AllergyScore
 
             this.Score = score;
         }
-        
+
+        private int Score { get; set; }
+
         /// <summary>
         /// Determines on base on the allergy test score for the given person, whether or not they're allergic to a given allergen(s).
         /// </summary>
